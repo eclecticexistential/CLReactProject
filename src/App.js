@@ -28,7 +28,7 @@ class App extends Component {
       <div className="App">
         <h1>Get Your Anime Stats Here</h1>
 		<Dropdown onChange={this.getAnimeCat}/>
-		<Results />
+		<Results animeList={this.state.Animes} />
       </div>
     );
   }
