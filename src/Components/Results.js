@@ -1,23 +1,23 @@
-import React {Component} from 'react';
-import PropType from 'prop-types';
+import React, {Component} from 'react';
+import Anime from 'Anime';
 
-const Results = (props) => {
-	render(){
+const Results = props => {
+	const dataset = props.data;
+	let animes = dataset.map(anime =>
+		<Anime name={anime.canonicalTitle} img={anime.posterImage.medium} key={anime.id} />
+	)
 		return (
-		{
-			props.map((anime, key) => {
-			<div key={key}>
-				<p>{anime.name}</p>
-				<img src={anime.img} alt={anime.name} />
-			</div>
-			}
-		}
+		<div>
+		{animes}
+		</div>
 		)
-	}
-}
-
-Results {
-	animes: PropType.array.isRequired
 }
 
 export default Results;
+	
+		return (
+			<ul>
+			{gifs}
+			</ul>
+		);
+}
