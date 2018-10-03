@@ -1,16 +1,12 @@
-import React, {Component} from 'react';
-import Anime from 'Anime';
+import React from 'react';
+import Anime from './Anime';
 
 const Results = props => {
-	const dataset = props.data;
-	let animes = dataset.map((anime, key) =>
-		<Anime name={anime.canonicalTitle} img={anime.posterImage.medium} key={key} />
+	console.log(props)
+	return (
+	<div>
+	</div>
 	)
-		return (
-		<div>
-		{animes}
-		</div>
-		)
 }
 
 export default Results;
