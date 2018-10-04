@@ -1,9 +1,10 @@
 import React from 'react';
 
 const Anime = props => (
-	<div key={props.key}>
-		<p>{props.name}</p>
-		<img src={props.img} alt={props.name} />
+	<div>
+		<h2>{props.title}</h2>
+		<img src={props.img} alt={props.title} />
+		<p>{props.synopsis}</p>
 	</div>
 )
 
