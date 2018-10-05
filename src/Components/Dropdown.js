@@ -43,6 +43,7 @@ class Dropdown extends Component {
 			id="genres" 
 			value={this.state.pickedGenre}
 			onChange={this.onGenreChange}
+			className="optSel"
 			>
 			<option value="">Genres</option>
 			{orderedList.map((item, key) => 

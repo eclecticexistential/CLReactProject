@@ -26,4 +26,15 @@
 
 .pink{
 	color: pink;
+	padding: 1em;
+}
+
+.nav{
+	list-style: none;
+	justify-content: space-around;
+	padding: 2em 0 0;
+}
+
+.optSel{
+	margin-top: 5em;
 }
