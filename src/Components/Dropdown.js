@@ -1,10 +1,13 @@
 import React, {Component} from 'react';
+import Results from './Results';
 
 class Dropdown extends Component {
 	constructor(){
 		super();
 	this.state = {
+		Animes: [],
 		pickedGenre: '',
+		picked: false,
 		Genres:[
 		{genre: "Comedy"},{genre:"Fantasy"},{genre:"Romance"},{genre:"Action"},{genre:"School Life"},{genre:"Tragedy"},{genre:"Adventure"},{genre:"Shoujo Ai"},
 		{genre:"Daily Life"},{genre:"Science Fiction"},{genre:"Yaoi"},{genre:"Sports"},{genre:"Japan"},{genre:"Earth"},{genre:"Thriller"},{genre:"Historical"},{genre:"Present"},
@@ -15,16 +18,12 @@ class Dropdown extends Component {
 	};
 	}
 	
-	addAnimeInfo = (info) => {
-		this.props.addAnimeInfo(info)
-	}
-	
 	getAnimeCat = (genre) => {		
 		const url = 'https://kitsu.io/api/edge/anime?filter[genres]=' + genre;
 		fetch(url)
 		.then(res => res.json())
 		.then(responseData => {
-			this.addAnimeInfo(responseData)
+			this.setState({Animes: responseData.data})
 		})
 		.catch(error => {
 			console.log('Error fetching data', error);
@@ -32,26 +31,31 @@ class Dropdown extends Component {
 	}
 	
 	onGenreChange = e => {
-		this.setState({pickedGenre: e.target.value});
 		this.getAnimeCat(e.target.value);
+		this.setState({pickedGenre: e.target.value});
+		this.setState({picked: true});
 	}
 	
 	render(){
 		const orderedList = this.state.Genres;
 			return(
-			<select 
-			id="genres" 
-			value={this.state.pickedGenre}
-			onChange={this.onGenreChange}
-			className="optSel"
-			>
-			<option value="">Genres</option>
-			{orderedList.map((item, key) => 
-			<option key={key} value={item.genre}>
-				{item.genre}
-				</option>
-			)}
-			</select>
+			<div className='genre'>
+			{this.state.picked === false ? <h1>Find a New Anime By Genre Below</h1> : <h3>Click Animes For More Info</h3> }
+				<select 
+				id="genres" 
+				value={this.state.pickedGenre}
+				onChange={this.onGenreChange}
+				className="optSel"
+				>
+				<option value="">Genres</option>
+				{orderedList.map((item, key) => 
+				<option key={key} value={item.genre}>
+					{item.genre}
+					</option>
+				)}
+				</select>
+				{this.state.picked === true ? <Results animeList={this.state.Animes}/> : <p className='pink'>Pick a genre</p>}
+			</div>
 			)
 		}
 	}

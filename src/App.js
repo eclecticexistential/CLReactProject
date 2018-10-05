@@ -1,39 +1,31 @@
 import React, { Component } from 'react';
-import Results from './Components/Results';
-import {Route, BrowserRouter, NavLink} from 'react-router-dom';
-import Dropdown from './Components/Dropdown';
+import {Route, BrowserRouter, Switch} from 'react-router-dom';
 import './App.css';
+import Genre from './Components/Genre';
+import Header from './Components/Header';
+import View from './Components/View';
+import Search from './Components/Search';
+import NotFound from './Components/NotFound';
+import About from './Components/About';
+import Footer from './Components/Footer';
 
 class App extends Component {
-	constructor(){
-		super();
-		this.state = {
-			Animes:[],
-			picked:false
-		}
-	}
-	
-	addAnimeInfo = (animes) => {
-		this.setState({Animes: animes})
-		this.setState({picked: true})
-	}
 	
   render() {
-    return (
-		  <div className="App my-3">		  
-			<BrowserRouter>
-				<header>
-					<ul className="nav">
-						<li><NavLink to="/search" activeClassName="activeWooName">Animes By Name</NavLink></li>
-						<li><NavLink exact to="/" activeStyle={{background: 'aliceblue', padding: '0.15em'}}>Get Anime By Genre</NavLink></li>
-						<li><NavLink to="/view">Your Anime List</NavLink></li>
-						<li><NavLink to="/about">About Kitsu Api</NavLink></li>
-					</ul>
-				</header>		
-			</BrowserRouter>
-			<Dropdown addAnimeInfo={this.addAnimeInfo}/>
-			{this.state.picked === true ? <Results animeList={this.state.Animes}/> : <p className='pink'>Pick a genre</p>}
+    return (		  
+	<BrowserRouter>
+		  <div className="App my-3">
+				<Header />	
+				<Switch>
+					<Route path="/Genre" component={Genre}/>
+					<Route path="/View" component={View}/>
+					<Route path="/Search" component={Search}/>
+					<Route exact path="/" component={About}/>
+					<Route component={NotFound}/>
+				</Switch>
+				<Footer />
 		  </div>
+	</BrowserRouter>
     );
   }
 }

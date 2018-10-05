@@ -32,9 +32,60 @@
 .nav{
 	list-style: none;
 	justify-content: space-around;
-	padding: 2em 0 0;
+	padding: 1.5em 0;
+	background: #449;
+}
+
+.nav a{
+	color: aliceblue;
+	text-decoration: none;
+}
+
+.nav a:hover{
+	text-decoration: none;
+	background: white;
+	padding: 1.5em 0.1em;
 }
 
 .optSel{
-	margin-top: 5em;
+	margin-top: 1em;
+}
+
+.genre{
+	color: white;
+	margin: 1em;
+}
+
+.about{
+	color: lightyellow;
+}
+
+.about p {
+	padding: 0.1em 0.5em;
+	margin: 0 1em;
+}
+
+.about img{
+	margin: 1.75em;
+	height: 25em;
+}
+
+#img2 {
+	width: 40em;
+}
+
+.footer{
+	margin-bottom: -1em;
+	background: #449;
+	color: white;
+}
+
+@media (max-width: 40em) {
+    .about img{
+	height: 10em;
+	}
+	#img2{
+		height: 6em;
+		width: auto;
+	}
 }
