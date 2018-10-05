@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 
 class Dropdown extends Component {
-	constructor(props){
-		super(props);
+	constructor(){
+		super();
 	this.state = {
 		pickedGenre: '',
 		Genres:[
@@ -14,15 +14,18 @@ class Dropdown extends Component {
 		]
 	};
 	}
+	
+	addAnimeInfo = (info) => {
+		this.props.addAnimeInfo(info)
+	}
+	
 	getAnimeCat = (genre) => {		
 		const url = 'https://kitsu.io/api/edge/anime?filter[genres]=' + genre;
-		const animeList = this.props.animeList;
 		fetch(url)
 		.then(res => res.json())
-		.then(responseData => responseData.data.map(anime => {
-			return animeList.push(anime.attributes);
+		.then(responseData => {
+			this.addAnimeInfo(responseData)
 		})
-		)
 		.catch(error => {
 			console.log('Error fetching data', error);
 		});
