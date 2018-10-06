@@ -16,15 +16,27 @@ class Details extends Component {
 		})
 	}
 	render() {
+		let animeName = this.props.location.state.props.title
+		let animeImg = this.props.location.state.props.img
+		let animeSyn = this.props.location.state.props.synopsis
 		return (
-			<div>
-				<h3>{this.props.title}</h3>
-				<p>{this.props.synopsis}</p>
-				<input onClick={this.addAnime} type='checkbox' value='add'/>
-				<label>Add?</label>
-				<hr />
-				<Link to="/View" >Click to View List</Link>
+		<div className='container'>
+			<div className='row' id='details'>
+				<div className='col-lg-3'>
+					<h1>{animeName}</h1>
+				</div>
+				<div className='col-lg-3'>
+					<img className="img-responsive" src={animeImg} alt={animeName} />
+				</div>
+				<div className='col-lg-3'>
+					<p>{animeSyn}</p>
+					<input onClick={this.addAnime} type='checkbox' value='add'/>
+					<label className='mt-5'>Add?</label>
+					<hr />
+					<Link to="/View" >Click to View List</Link>
+				</div>
 			</div>
+		</div>
 		)
 	}
 }

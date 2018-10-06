@@ -15,7 +15,7 @@ class App extends Component {
   render() {
     return (		  
 	<BrowserRouter>
-		  <div className="App my-3">
+		  <div className="App">
 				<Header />	
 				<Switch>
 					<Route path="/Genre" component={Genre}/>

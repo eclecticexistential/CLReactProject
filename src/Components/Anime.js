@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link, Route} from 'react-router-dom'; 
-import Details from './Details';
+import {NavLink} from 'react-router-dom'; 
+
 
 const Anime = props => {
+	console.log(props)
 	return (
 	<div className="col-lg-3" id='anime'>
 		<h5>{props.title}</h5>
-		<Link to="/details/anime" ><img className="img-responsive" src={props.img} alt={props.title} /></Link>
-		<Route path='/details/anime' render={ () => <Details data={this.props.synopsis}/>}/>
+		<NavLink to={{pathname:`/details/${props.title}`, state: {props}}} ><img className="img-responsive" src={props.img} alt={props.title} /></NavLink>
 	</div>
 	)
 }
