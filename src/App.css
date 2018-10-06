@@ -48,7 +48,7 @@
 }
 
 .optSel{
-	margin-top: 1em;
+	margin: 2em 0 2.5em;
 }
 
 .genre{
@@ -74,6 +74,21 @@
 	width: 40em;
 }
 
+.extraSpace{
+	margin: 2em;
+	padding: 2em;
+}
+
+#anime{
+	background: #111;
+	padding: 1em;
+}
+
+#anime img{
+	height: 15em;
+	padding: 0.5em;
+}
+
 .footer{
 	margin-bottom: -1em;
 	background: #449;
@@ -87,5 +102,8 @@
 	#img2{
 		height: 6em;
 		width: auto;
+	}	
+	#img404{
+		height: 15em;
 	}
 }

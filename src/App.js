@@ -8,6 +8,7 @@ import Search from './Components/Search';
 import NotFound from './Components/NotFound';
 import About from './Components/About';
 import Footer from './Components/Footer';
+import Details from './Components/Details';
 
 class App extends Component {
 	
@@ -21,6 +22,7 @@ class App extends Component {
 					<Route path="/View" component={View}/>
 					<Route path="/Search" component={Search}/>
 					<Route exact path="/" component={About}/>
+					<Route path="/Details" component={Details}/>
 					<Route component={NotFound}/>
 				</Switch>
 				<Footer />

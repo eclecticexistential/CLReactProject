@@ -19,7 +19,7 @@ class Dropdown extends Component {
 	}
 	
 	getAnimeCat = (genre) => {		
-		const url = 'https://kitsu.io/api/edge/anime?filter[genres]=' + genre;
+		const url = 'https://kitsu.io/api/edge/anime?filter[genres]=' + genre + '&page[limit]=20';
 		fetch(url)
 		.then(res => res.json())
 		.then(responseData => {
@@ -54,7 +54,7 @@ class Dropdown extends Component {
 					</option>
 				)}
 				</select>
-				{this.state.picked === true ? <Results animeList={this.state.Animes}/> : <p className='pink'>Pick a genre</p>}
+				{this.state.picked === true ? <Results animeList={this.state.Animes}/> : <p className='extraSpace'></p>}
 			</div>
 			)
 		}
