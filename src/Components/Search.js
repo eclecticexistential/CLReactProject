@@ -33,14 +33,14 @@ class Search extends Component {
 	
 render(){
 		return (
-		<div>
-		<h1 className='m-3'>Look Up Anime By Name</h1>
+		<div className='search'>
+		<h1 className='m-3'>Search Anime By Name</h1>
 			<form onSubmit={this.onSubmit} className='extraSpace'>
 				<input type="search"
 				name="search"
 				ref={(input) => this.query = input}
 				placeholder="Name Your Anime"
-				className='mr-4'/>
+				/>
 				<button type="submit" id="submit">Submit</button>
 			</form>
 			{this.state.picked === true ? <Results animeList={this.state.animeStats}/> : <p className='extraSpace'></p>}

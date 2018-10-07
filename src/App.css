@@ -41,6 +41,12 @@
 	text-decoration: none;
 }
 
+.nav a:hover{
+	text-decoration: none;
+	background: white;
+	padding: 1.5em 0.1em;
+}
+
 #details{
 	color: white;
 	justify-content: space-between;
@@ -58,10 +64,16 @@
 	height: 26.5em;
 }
 
-.nav a:hover{
-	text-decoration: none;
-	background: white;
-	padding: 1.5em 0.1em;
+.search{
+	color: #60A;
+}
+
+.search form{
+	padding: 1em;
+}
+
+.search input{
+	margin: 1em 0.5em;
 }
 
 .optSel{
@@ -107,6 +119,27 @@
 	padding: 0.5em;
 }
 
+.view{
+	text-align: center;
+	color: aliceblue;
+}
+
+.view h2, .view h3{
+	padding: 0.5em;
+}
+
+.view img{
+	height: 15em;
+}
+
+.view ul{
+	list-style: none;
+}
+
+#empty{
+	height: 25em;
+}
+
 .footer{
 	margin-bottom: -1em;
 	background: #449;
@@ -126,5 +159,17 @@
 	}
 	#details img{
 		height: 15em;
+	}
+	
+	#empty{
+		height: 10em;
+	}
+	
+	.search input{
+		margin: 1em 0;
+	}
+	
+	.nav a:hover{
+	padding: 0.25em 0.1em;
 	}
 }
