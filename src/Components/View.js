@@ -28,14 +28,12 @@ class View extends Component {
 	
 	getAnimeList = e => {
 		e.preventDefault()
-		let userId = e.target.value
-		this.props.getAnimeList(userId)
+		this.props.getList(this.state.userId)
 	}
 	
 	saveAnimeList = e => {
 		e.preventDefault()
-		let userId = e.target.value
-		this.props.saveAnimeList(userId)
+		this.props.saveList(this.state.userId)
 	}
 	
 	render() {
