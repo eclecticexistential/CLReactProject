@@ -136,6 +136,10 @@
 	list-style: none;
 }
 
+.viewInput{
+	margin: 0 1em;
+}
+
 #empty{
 	height: 25em;
 }

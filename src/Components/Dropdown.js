@@ -9,7 +9,7 @@ class Dropdown extends Component {
 		pickedGenre: '',
 		picked: false,
 		Genres:[
-		{genre: "Comedy"},{genre:"Fantasy"},{genre:"Romance"},{genre:"Action"},{genre:"School Life"},{genre:"Tragedy"},{genre:"Adventure"},{genre:"Shoujo Ai"},
+		{genre: "Comedy"},{genre:"Fantasy"},{genre:"Romance"},{genre:"Action"},{genre:"School Life"},{genre:"Adventure"},{genre:"Shoujo Ai"},
 		{genre:"Daily Life"},{genre:"Science Fiction"},{genre:"Yaoi"},{genre:"Sports"},{genre:"Japan"},{genre:"Earth"},{genre:"Thriller"},{genre:"Historical"},{genre:"Present"},
 		{genre:"Mystery"},{genre:"Asia"},{genre:"Harem"},{genre:"Magic"},{genre:"Kids"},{genre:"Horror"},{genre:"Mecha"},{genre:"Music"},{genre:"Psychological"},
 		{genre:"Super Power"},{genre:"Shounen Ai"},{genre:"Martial Arts"},{genre:"Demon"},{genre:"Military"},{genre:"Plot Continuity"},{genre:"Motorsport"},{genre:"Fantasy World"},

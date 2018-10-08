@@ -18,6 +18,35 @@ class App extends Component {
 		}
 	}
 	
+	getAnimeList = (id) => {
+		fetch('http://localhost:3004/user/'+id)
+		.then(res => res.json())
+		.then(responseData => {
+			this.setState({ListOfAnime: responseData.AnimeList})
+		})
+		.catch(error => {
+			console.log('Error fetching data', error);
+		});
+	}
+	
+	saveAnimeList = (id) => {
+		fetch('http://localhost:3004/users/'+id+'/AnimeList',{
+			method: 'POST',
+			headers: {
+				'Accept':'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				user: id,
+				AnimeList: this.state.ListOfAnime,
+			})
+		})
+		.catch(error => {
+			console.log('Error saving info', error);
+		});
+	}
+
+	
 	addAnime = (anime) => {
 		let newAnime = {name: anime.canonicalTitle, img: anime.posterImage.medium, syn: anime.synopsis, id: (this.state.ListOfAnime.length)}
 		this.setState(state =>{
@@ -40,7 +69,7 @@ class App extends Component {
 				<Header />	
 				<Switch>
 					<Route path="/Genre" component={Genre}/>
-					<Route path="/View" render={ () => <View anime={this.state.ListOfAnime} remov={this.removeAnime} /> } />
+					<Route path="/View" render={ () => <View anime={this.state.ListOfAnime} remov={this.removeAnime} saveList={this.saveAnimeList} getList={this.getAnimeList}/> } />
 					<Route path="/Search" component={Search}/>
 					<Route exact path="/" component={About}/>
 					<Route path="/Details" render={ () => <Details addAnime={this.addAnime} /> }/>
