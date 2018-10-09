@@ -11,10 +11,15 @@ class View extends Component {
 	}
 	
 	lengthOData(){
+		if(this.props.currUser){
+			this.setState({userId: this.props.currUser})
+		}
+		if(this.props.currUser === '' && this.state.userId === ''){
 		fetch('http://localhost:3004/user').then(res => res.json())
 		.then(responseData => {
 			this.setState({userId: responseData.length})
 		})
+	  }
 	}
 	
 	onUpdate = (e) => {
@@ -33,7 +38,13 @@ class View extends Component {
 	
 	saveAnimeList = e => {
 		e.preventDefault()
-		this.props.saveList(this.state.userId)
+		if(this.state.userId !== ''){
+			console.log(this.state.userId)
+			this.props.saveList(this.state.userId)
+		}
+		if(this.state.userId === ''){
+			this.props.saveList(this.props.currUser)
+		}
 	}
 	
 	render() {
@@ -44,8 +55,7 @@ class View extends Component {
 		(
 		<div>
 			<h2>List of Animes</h2>
-			<h4>Ready to Save? Enter Your </h4>
-			<p>Your User Id is: {this.state.userId ? this.state.userId : this.lengthOData()}</p>
+			<p>Your User Id is: {this.props.currUser ? this.props.currUser : this.lengthOData()}{this.props.currUser ? '' : this.state.userId}</p>
 			<button onClick={this.saveAnimeList}>Save Anime List</button>
 			<div className='row'>
 			{info.map(anime => 

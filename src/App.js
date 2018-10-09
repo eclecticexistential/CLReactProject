@@ -15,6 +15,7 @@ class App extends Component {
 		super();
 		this.state = {
 			ListOfAnime: [],
+			userId: ''
 		}
 	}
 	
@@ -24,14 +25,21 @@ class App extends Component {
 		.then(res => res.json())
 		.then(responseData => {
 			this.setState({ListOfAnime: responseData.AnimeList})
+			this.setState({userId: id})
 		})
 		.catch(error => {
 			console.log('Error fetching data', error); //can you reroute to your anime list page?
 		})
 	}
 	
-	postAnimeList = (id) => {
-		let url = `http://localhost:3004/user`
+	postAnimeList = (userId) => {
+		let updatedAnimeId = this.state.ListOfAnime.map((anime, index) => {
+			anime.id = index
+			return (
+			anime
+			)
+		})
+		let url = `http://localhost:3004/user/`
 			fetch(url, {
 				method: 'POST',
 				headers: {
@@ -39,17 +47,18 @@ class App extends Component {
 					'Content-Type': 'application/json',
 				},
 				body: JSON.stringify({
-					"id": id,
-					"AnimeList": this.state.ListOfAnime,
+					"id": userId.toString(),
+					"AnimeList": updatedAnimeId,
 				})
 			})
 			.catch(error => {
 				console.log('Error saving new user info', error);
 			});
+		
 	}
 	
-	updateAnimeList = (id) => {
-		let url = `http://localhost:3004/user/${id}`
+	updateAnimeList = (userId) => {
+		let url = `http://localhost:3004/user/${userId}`
 			fetch(url, {
 				method: 'DELETE',
 				headers: {
@@ -60,24 +69,20 @@ class App extends Component {
 			.catch(error => {
 				console.log('Error deleting info', error);
 			});
-			return this.postAnimeList(id)
+			return this.postAnimeList(userId)
 	}
 	
-	saveAnimeList = (id) => {
+	saveAnimeList = (userId) => {
 		let url = `http://localhost:3004/user`
 		fetch(url)
 		.then(res => res.json())
-		.then(responseData => {
-			if(responseData[id].id !== parseInt(id)){
-				return this.postAnimeList(id)
-			}
-			if(responseData[id].id === parseInt(id)){
-				return this.updateAnimeList(id)
-			}
+		.then(responseData => { responseData.map(users => {
+			if(users.id === userId){
+				return this.updateAnimeList(userId)
+				}
+			})
 		})
-		.catch(error => {
-				console.log('User does not exist', error);
-			});
+		return this.postAnimeList(userId)
 	}
 	
 	addAnime = (anime) => {
@@ -102,7 +107,13 @@ class App extends Component {
 				<Header />	
 				<Switch>
 					<Route path="/Genre" component={Genre}/>
-					<Route path="/View" render={ () => <View anime={this.state.ListOfAnime} remov={this.removeAnime} saveList={this.saveAnimeList} getList={this.getAnimeList} /> } />
+					<Route path="/View" render={ () => 
+						<View anime={this.state.ListOfAnime} 
+							  remov={this.removeAnime} 
+							  saveList={this.saveAnimeList} 
+							  getList={this.getAnimeList} 
+							  currUser={this.state.userId}
+						/> } />
 					<Route path="/Search" component={Search}/>
 					<Route exact path="/" component={About}/>
 					<Route path="/Details" render={ () => <Details addAnime={this.addAnime} /> }/>
