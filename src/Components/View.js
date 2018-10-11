@@ -22,19 +22,10 @@ class View extends Component {
 	  }
 	}
 	
-	onUpdate = (e) => {
-		this.setState({userId: e.target.value})
-	}
-	
 	deleteAnime = e => {
 		let id = e.target.value
 		this.props.remov(id)
 	};
-	
-	getAnimeList = e => {
-		e.preventDefault()
-		this.props.getList(this.state.userId)
-	}
 	
 	saveAnimeList = e => {
 		e.preventDefault()
@@ -73,10 +64,8 @@ class View extends Component {
 		<div>
 			<h2>Looks like you haven't added any anime yet.</h2>
 			<img className='img-responsive' id='empty' src={'https://invisiblecatpatrol.files.wordpress.com/2017/05/maxresdefault.jpg?w=860&h=484'} alt={'No Game No Life - Shiro and Sora'} />
-			<h3>New? Add Anime By <NavLink to="/search">Name</NavLink> or <NavLink to="/genre">Genre</NavLink></h3>
-			<h4>Have a list saved? Enter your id below.</h4>
-				<input type="text" className='viewInput' placeholder="Enter User Id" value={this.state.userId} onChange={this.onUpdate}/>
-				<button onClick={this.getAnimeList}>Add</button>
+			<h3>New? Get an Id Today! Add Anime By <NavLink to="/search">Name</NavLink> or <NavLink to="/genre">Genre</NavLink></h3>
+			<h4>Have an id? Log in to view your anime list!</h4>
 		</div>
 	}
 	</div>

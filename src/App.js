@@ -32,6 +32,15 @@ class App extends Component {
 		})
 	}
 	
+	userLogOut = () => {
+		this.setState({userId: ''})
+		this.setState({ListOfAnime: []})
+	}
+	
+	userLogIn = (userId) =>{
+		this.setState({userId: userId})
+	}
+	
 	postAnimeList = (userId) => {
 		let updatedAnimeId = this.state.ListOfAnime.map((anime, index) => {
 			anime.id = index
@@ -54,7 +63,6 @@ class App extends Component {
 			.catch(error => {
 				console.log('Error saving new user info', error);
 			});
-		
 	}
 	
 	updateAnimeList = (userId) => {
@@ -80,9 +88,9 @@ class App extends Component {
 			if(users.id === userId){
 				return this.updateAnimeList(userId)
 				}
+			return this.postAnimeList(userId)
 			})
 		})
-		return this.postAnimeList(userId)
 	}
 	
 	addAnime = (anime) => {
@@ -94,7 +102,8 @@ class App extends Component {
 	};
 	
 	removeAnime = (animeId) => {
-		let filteredAnime = this.state.ListOfAnime.filter(item => item.id !== parseInt(animeId))
+		let getDigit = parseInt(animeId, 10)
+		let filteredAnime = this.state.ListOfAnime.filter(item => item.id !== getDigit)
 		this.setState(state => ({
 			ListOfAnime: filteredAnime
 		}));
@@ -104,14 +113,17 @@ class App extends Component {
     return (		  
 	<BrowserRouter>
 		  <div className="App">
-				<Header />	
+				<Header 
+				currUser={this.state.userId} 
+				log={this.userLogOut} 
+				login={this.userLogIn}
+				getList={this.getAnimeList}/>	
 				<Switch>
 					<Route path="/Genre" component={Genre}/>
 					<Route path="/View" render={ () => 
 						<View anime={this.state.ListOfAnime} 
 							  remov={this.removeAnime} 
 							  saveList={this.saveAnimeList} 
-							  getList={this.getAnimeList} 
 							  currUser={this.state.userId}
 						/> } />
 					<Route path="/Search" component={Search}/>

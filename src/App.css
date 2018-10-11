@@ -119,6 +119,15 @@
 	padding: 0.5em;
 }
 
+#login {
+	width: 4.5em;
+}
+
+#logout span{
+	color: white;
+	margin-right: 1.5em;
+}
+
 .view{
 	text-align: center;
 	color: aliceblue;

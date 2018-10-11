@@ -1,17 +1,6 @@
 {
   "user": [
     {
-      "id": "0",
-      "AnimeList": [
-        {
-          "id": 0,
-          "name": "Choujuu Kishin Dancougar",
-          "img": "https://media.kitsu.io/anime/poster_images/2043/medium.jpg?1408445602",
-          "syn": "Emperor Muge Zarbados and his Empire of Death decide that their next conquest will be the faraway planet of Earth. Muge becomes even more fearsome because of Shapiro Keats, a power-hungry Earthling-turned-traitor. It's up to Shinobu, Sara (Shapiro's old girldfriend), Masato, and Ryo of the Jyusenkitai/Cyber Beast Force to pilot the four Jyusenki/Beast Mecha (Eagle Fighter, Land Cougar, Land Liger, and Big Moth [a mammoth mecha]), which can combine into the giant mech"
-        }
-      ]
-    },
-    {
       "id": "1",
       "AnimeList": [
         {
@@ -23,6 +12,23 @@
       ]
     },
     {
+      "id": "4",
+      "AnimeList": [
+        {
+          "name": "Kimi no Hikari: Asagao to Kase-san.",
+          "img": "https://media.kitsu.io/anime/poster_images/13513/medium.jpg?1494175319",
+          "syn": "Yamada may be shy and rather clumsy, but the flower gardens at her school have always brought her happiness. Suddenly, a different sort of beauty catches her eye—the vivacious track star, Kase-san. Although the two girls don’t seem to have much in common, they soon start a romance where each must learn an important lesson in tending their budding relationship. Can the two girls, so different from each other, learn how to make their first love blossom?\r\n\r\n(Source: Seven Seas Entertainment)",
+          "id": 0
+        },
+        {
+          "name": "Psycho-Pass SS Case 1: Tsumi to Batsu",
+          "img": "https://media.kitsu.io/anime/poster_images/41027/medium.jpg?1520522926",
+          "syn": "The first film, \"Case.1 Tsumi to Bachi\" (Crime and Punishment), will focus on Nobuchika Ginoza and Mika Shimotsuki.",
+          "id": 1
+        }
+      ]
+    },
+    {
       "id": "3",
       "AnimeList": [
         {
@@ -30,6 +36,12 @@
           "img": "https://media.kitsu.io/anime/poster_images/2728/medium.jpg?1408447554",
           "syn": "The series follows in the footsteps of manga such as Doraemon and Obake no Q-Taro in that the alien Ganmo (who resembles a chicken wearing sneakers) sets out to help his adopted human friend Hanpeita. The series follows the antics of the duo as they find themselves in the middle of much comedic mischief.\nOne morning Tsukune Tsukuda, out of spite, lets her brother’s pet bird go. But later she has misgivings, and comes home with an egg she has found to give to her brother, Hapeita.\nHanpeita isn’t all too pleased with the big, odd-looking egg. However, in the meantime it swells up, breaks its shell, and out comes a strange bird-like creature named Ganmo’. It speaks like a human being, and comes to live with the Tsukudas.\nNot wanting to be a mere freeloader, Ganmo takes the initiative to run errands, clean the house, etc…yet he blunders at everything he does. Ganmo the tries to clear his reputation, but his efforts only ends causing more and more confusion.\nOne day a charming girl comes moving in the house next to the Tsukudas. Her pet is a stange mina, named Deja-vu. It is foppish but has a poisonous tongue. And it always teases Ganmo because of its odd-looking.\nThus, the world around Ganmo gets into a mess more and more.\n(Source: Wikipedia)",
           "id": 0
+        },
+        {
+          "name": "Shampoo Ouji",
+          "img": "https://media.kitsu.io/anime/poster_images/40779/medium.jpg?1519193854",
+          "syn": "Prince Shampoo lives in the clean and shiny Bubble Kingdom. He's bored with his life and decides to jump out of the protective dome and explore the dirty things of the outer world. Here he encounters various people and understands what dirty and cleanliness really mean in the world.",
+          "id": 1
         }
       ]
     },
@@ -40,6 +52,104 @@
           "name": "Kaifeng Qi Tan - Zhe Ge Bao Gong Bu Tai Xing",
           "img": "https://media.kitsu.io/anime/poster_images/40999/medium.jpg?1519618714",
           "syn": "Bao Zheng never wanted to be the magistrate of Kai Feng, yet here he was, a young, inexperience, and not entirely reliable government official, trying to clear the innocent and punish the evil doer. Case by case, he and his quirky subordinates get better at their jobs and become more passionate for what they do.\r\n\r\n(Source: MAL)",
+          "id": 0
+        },
+        {
+          "name": "Docchi mo Maid",
+          "img": "https://media.kitsu.io/anime/poster_images/10926/medium.jpg?1432150100",
+          "syn": "Izumi, a 12-year-old schoolgirl, suddenly gets not one but two lovely and rather lewd maids from outer space, who have to defend her city from a monster's invasion.",
+          "id": 1
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "AnimeList": [
+        {
+          "name": "Yonimo Osoroshii Grimm Douwa",
+          "img": "https://media.kitsu.io/anime/poster_images/3456/medium.jpg?1408449725",
+          "syn": "The truth behind the well-known Grimm's Tales is cruel and full of blood and lust!\r\nEpisode 1: \"Hansel & Gretel\": Two brothers lost in the woods were actually criminals...\r\nEpisode 2: \"The Blue Beard\": The true character of the Blue Beard was a cannibal who was unable to tolerate his wife's adultery. \r\nEpisode 3: \"Cinderella\": Actually Cinderella had abnormal affections toward the prince.",
+          "id": 0
+        },
+        {
+          "name": "Good Morning Althea",
+          "img": "https://media.kitsu.io/anime/poster_images/2252/medium.jpg?1442525265",
+          "syn": "The story revolves around Nikolai, apparently a part-cyborg; Galory, a young boy who apparently is part human/part Crest person, and Althea, who is entirely a Crest person. Seems the Earth and the Crest people were at war for 300 years so there's still a lot of bad feelings present. \nThe ship Galory, Nikolai and others are on is ambushed and almost everyone killed by some kind of automated attack ships from a huge Crest ship that has been taken over by an automaton. \nGalory, Nikolai and Althea go to the ship to try and see if there are any survivors of an advanced party from Galory's ship that can be saved, and to see if they can destroy the Type 38 automaton in the ship's core. \n(Source: AniDB)",
+          "id": 1
+        },
+        {
+          "name": "No Game No Life",
+          "img": "https://media.kitsu.io/anime/poster_images/7880/medium.jpg?1418914006",
+          "syn": "No Game No Life is a surreal comedy that follows Sora and Shiro, shut-in NEET siblings and the online gamer duo behind the legendary username \"Kuuhaku.\" They view the real world as just another lousy game; however, a strange e-mail challenging them to a chess match changes everything—the brother and sister are plunged into an otherworldly realm where they meet Tet, the God of Games.\r\n\r\nThe mysterious god welcomes Sora and Shiro to Disboard, a world where all forms of conflict—from petty squabbles to the fate of whole countries—are settled not through war, but by way of high-stake games. This system works thanks to a fundamental rule wherein each party must wager something they deem to be of equal value to the other party's wager. In this strange land where the very idea of humanity is reduced to child’s play, the indifferent genius gamer duo of Sora and Shiro have finally found a real reason to keep playing games: to unite the sixteen races of Disboard, defeat Tet, and become the gods of this new, gaming-is-everything world.\r\n\r\n(Source: MAL Rewrite)",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "AnimeList": [
+        {
+          "name": "Ai no Gakkou Cuore Monogatari",
+          "img": "https://media.kitsu.io/anime/poster_images/3287/medium.jpg?1408449270",
+          "syn": "Enrico Pocchini is a kind-hearted schoolboy with a strong sense of justice who lives in the Italian town of Torino. As a new term starts, he loses his beloved teacher, Miss Delacci, who is replaced by the stern Sr. Pelboni. Eventually, the boys in Enrico's class come to respect Sr. Pelboni, and learn about love, life and human kindness.\r\n(Source: AniDB)",
+          "id": 0
+        },
+        {
+          "name": "Chainsaw Maid Episode 0",
+          "img": "https://media.kitsu.io/anime/poster_images/41248/medium.jpg?1525015105",
+          "syn": "A special episode included on the Chainsaw Maid DVD.\r\n",
+          "id": 1
+        },
+        {
+          "name": "DC Super Heroes vs Taka no Tsume Dan Promotion Eizou",
+          "img": "https://media.kitsu.io/anime/poster_images/41757/medium.jpg?1533259984",
+          "syn": "",
+          "id": 2
+        },
+        {
+          "name": "Shijou Saikyou no Deshi Kenichi",
+          "img": "https://media.kitsu.io/anime/poster_images/1399/medium.jpg?1462468866",
+          "syn": "\"Weak Legs\" Kenichi Shirahama would rather spend his time reading self improvement books than fighting. However, when he finally works up the courage to become strong and join his school's karate club, he is coerced into fighting a bullying upperclassman who is intent on getting him kicked out of the club. He is about to give it all up until he falls for his mysterious new classmate, Miu Furinji. In order to face this challenge, he undergoes rigorous training at the dojo she lives at, Ryouzanpaku. Some initial training by the masters there allow him to defeat his upperclassman, however his fighting prowess brings him to the attention of the powerful gang of delinquents, Ragnarok. Wishing to protect the things he loves and determined to have the strength to face the increasing adversity, he must learn various martial arts from the dojo's resident masters, taking Karate, Muay Thai, Ju Jitsu and Chinese Martial Arts and combining them to create his own fighting style!",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "id": "0",
+      "AnimeList": [
+        {
+          "name": "Bai Ye Ling Long",
+          "img": "https://media.kitsu.io/anime/poster_images/41215/medium.jpg?1524193400",
+          "syn": "Ling Long is a normal girl. She just wants to get through her day without any problems, but makes a mess out of it again. Why? It's because her online friend has suddenly stopped contacting her. As time went on, she became more and more agitated. Her normal life has began to change...",
+          "id": 0
+        },
+        {
+          "name": "Giant Robo Gaiden Ginrei",
+          "img": "https://media.kitsu.io/anime/poster_images/2103/medium.jpg?1408445796",
+          "syn": "In episode one, Ginrei's dress is stolen, only to be used to fool the enemy. The second episode deals with a giant robot made exactly in her image. Finally, the third episode concerns Tetsugyu and Ginrei investigating a lost research team in a \"wild west\" desert setting.\r\n(Source: ANN)",
+          "id": 1
+        },
+        {
+          "name": "Shijou Saikyou no Deshi Kenichi",
+          "img": "https://media.kitsu.io/anime/poster_images/1399/medium.jpg?1462468866",
+          "syn": "\"Weak Legs\" Kenichi Shirahama would rather spend his time reading self improvement books than fighting. However, when he finally works up the courage to become strong and join his school's karate club, he is coerced into fighting a bullying upperclassman who is intent on getting him kicked out of the club. He is about to give it all up until he falls for his mysterious new classmate, Miu Furinji. In order to face this challenge, he undergoes rigorous training at the dojo she lives at, Ryouzanpaku. Some initial training by the masters there allow him to defeat his upperclassman, however his fighting prowess brings him to the attention of the powerful gang of delinquents, Ragnarok. Wishing to protect the things he loves and determined to have the strength to face the increasing adversity, he must learn various martial arts from the dojo's resident masters, taking Karate, Muay Thai, Ju Jitsu and Chinese Martial Arts and combining them to create his own fighting style!",
+          "id": 2
+        },
+        {
+          "name": "Aa! Megami-sama!: Sorezore no Tsubasa Specials",
+          "img": "https://media.kitsu.io/anime/poster_images/780/medium.jpg?1408442264",
+          "syn": "When Keiichi found his grandpa's diary and saw a treasure map inside, Skuld and Urd started to feel a great urge to search it. With the company of his friends, Keiichi arrives to Honda Inn, the place indicated on the map. Once the party is inside, they meet Honda Chieko, who seems to share a certain promise with Keiichi. Apart from all that confusion, it's time for Keiichi to have enough courage to say the words \"I love you\" to Belldandy.",
+          "id": 3
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "AnimeList": [
+        {
+          "name": "Gu-Gu Ganmo",
+          "img": "https://media.kitsu.io/anime/poster_images/2728/medium.jpg?1408447554",
+          "syn": "The series follows in the footsteps of manga such as Doraemon and Obake no Q-Taro in that the alien Ganmo (who resembles a chicken wearing sneakers) sets out to help his adopted human friend Hanpeita. The series follows the antics of the duo as they find themselves in the middle of much comedic mischief.\nOne morning Tsukune Tsukuda, out of spite, lets her brother’s pet bird go. But later she has misgivings, and comes home with an egg she has found to give to her brother, Hapeita.\nHanpeita isn’t all too pleased with the big, odd-looking egg. However, in the meantime it swells up, breaks its shell, and out comes a strange bird-like creature named Ganmo’. It speaks like a human being, and comes to live with the Tsukudas.\nNot wanting to be a mere freeloader, Ganmo takes the initiative to run errands, clean the house, etc…yet he blunders at everything he does. Ganmo the tries to clear his reputation, but his efforts only ends causing more and more confusion.\nOne day a charming girl comes moving in the house next to the Tsukudas. Her pet is a stange mina, named Deja-vu. It is foppish but has a poisonous tongue. And it always teases Ganmo because of its odd-looking.\nThus, the world around Ganmo gets into a mess more and more.\n(Source: Wikipedia)",
           "id": 0
         }
       ]
