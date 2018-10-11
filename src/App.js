@@ -42,6 +42,9 @@ class App extends Component {
 	}
 	
 	postAnimeList = (userId) => {
+		if(this.userId === ''){
+			this.setState({userId: userId})
+		}
 		let updatedAnimeId = this.state.ListOfAnime.map((anime, index) => {
 			anime.id = index
 			return (

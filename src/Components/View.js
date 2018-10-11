@@ -28,9 +28,7 @@ class View extends Component {
 	};
 	
 	saveAnimeList = e => {
-		e.preventDefault()
 		if(this.state.userId !== ''){
-			console.log(this.state.userId)
 			this.props.saveList(this.state.userId)
 		}
 		if(this.state.userId === ''){

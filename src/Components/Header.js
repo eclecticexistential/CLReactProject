@@ -6,8 +6,7 @@ class Header extends Component {
 	constructor(){
 		super();
 		this.state = {
-			userId: '',
-			check: false
+			userId: ''
 		}
 	}
 	
@@ -17,7 +16,7 @@ class Header extends Component {
 	
 	userLogOut = () => {
 		this.props.log()
-		this.setState({userId: '', check: false})
+		this.setState({userId: ''})
 	}
 	userLogIn = () => {
 		let url = `http://localhost:3004/user`
