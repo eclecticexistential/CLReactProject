@@ -14,7 +14,7 @@ class Search extends Component {
 		let woSpace = name.replace(' ', '%20')
 		this.setState({animeName: woSpace})
 		const url = 'https://kitsu.io/api/edge/anime?filter[text]=' + woSpace;
-		fetch(url)
+		fetch(url, {cache: "force-cache"})
 		.then(res => res.json())
 		.then(responseData => {
 			this.setState({animeStats: responseData.data})

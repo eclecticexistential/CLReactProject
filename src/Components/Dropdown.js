@@ -20,7 +20,7 @@ class Dropdown extends Component {
 	
 	getAnimeCat = (genre) => {		
 		const url = 'https://kitsu.io/api/edge/anime?filter[genres]=' + genre + '&page[limit]=20';
-		fetch(url)
+		fetch(url, {cache: "force-cache"})
 		.then(res => res.json())
 		.then(responseData => {
 			this.setState({Animes: responseData.data})

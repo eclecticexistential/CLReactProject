@@ -83,7 +83,7 @@ class App extends Component {
 	saveAnimeList = (userId) => {
 		this.setState({userId: userId})
 		let url = `http://localhost:3004/user`
-		fetch(url)
+		fetch(url, {cache: "force-cache"})
 		.then(res => res.json())
 		.then(responseData => { responseData.map(users => {
 			if(users.id === userId){
