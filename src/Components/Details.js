@@ -14,12 +14,12 @@ class Details extends Component {
 		alert("Added.")
 	};
 	
-	componentDidMount() {
+	async componentDidMount() {
 		let urlLoc = window.location.href
 		let nameOnly = urlLoc.split('/').pop();
 		let woSpace = nameOnly.replace('%20', ' ')
 		const url = 'https://kitsu.io/api/edge/anime?filter[text]=' + woSpace + '&page[limit]=1';
-		fetch(url)
+		await fetch(url)
 		.then(res => res.json())
 		.then(responseData => {
 			this.setState({animeStat: responseData.data.map(anime => anime.attributes)})

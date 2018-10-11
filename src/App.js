@@ -42,9 +42,6 @@ class App extends Component {
 	}
 	
 	postAnimeList = (userId) => {
-		if(this.userId === ''){
-			this.setState({userId: userId})
-		}
 		let updatedAnimeId = this.state.ListOfAnime.map((anime, index) => {
 			anime.id = index
 			return (
@@ -84,6 +81,7 @@ class App extends Component {
 	}
 	
 	saveAnimeList = (userId) => {
+		this.setState({userId: userId})
 		let url = `http://localhost:3004/user`
 		fetch(url)
 		.then(res => res.json())
@@ -91,9 +89,12 @@ class App extends Component {
 			if(users.id === userId){
 				return this.updateAnimeList(userId)
 				}
-			return this.postAnimeList(userId)
 			})
 		})
+		.catch(error => {
+			console.log('Unable to save', error);
+		});
+		this.postAnimeList(userId)
 	}
 	
 	addAnime = (anime) => {

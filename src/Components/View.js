@@ -19,6 +19,9 @@ class View extends Component {
 		.then(responseData => {
 			this.setState({userId: responseData.length})
 		})
+		.catch(error => {
+			console.log('Error determining length', error)
+		})
 	  }
 	}
 	

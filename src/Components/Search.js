@@ -43,7 +43,7 @@ render(){
 				/>
 				<button type="submit" id="submit">Submit</button>
 			</form>
-			{this.state.picked === true ? <Results animeList={this.state.animeStats}/> : <p className='extraSpace'></p>}
+			{this.state.picked === true && <Results animeList={this.state.animeStats}/>}
 		</div>
 		)
 	}
