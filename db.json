@@ -194,28 +194,6 @@
       ]
     },
     {
-      "id": "14",
-      "AnimeList": [
-        {
-          "name": "Star Fox Zero: The Battle Begins",
-          "img": "https://media.kitsu.io/anime/poster_images/12089/medium.jpg?1461276732",
-          "syn": "Andross, an ape exiled from the Lylad Planetary System by General Pepper seeks revenge by attacking the planet Corneria and its innocence, kidnapping Pepper in the process. Meanwhile, it's another usual day for Team Star Fox, a gang of space mercenaries: Lazing around, getting angry at video games, and being lectured by their mentors. But all of that changes once they receive a distress call from a familiar face. \r\nMeet Fox McCloud, son of the deceased James McCloud, as he and his top-notch crew—Slippy Toad, Falco Lombarde and Peppy Hare—fight back against Andross's robotic army in style, and attempt to save Corneria from the skies.",
-          "id": 0
-        }
-      ]
-    },
-    {
-      "id": "15",
-      "AnimeList": [
-        {
-          "name": "Uchiage Hanabi, Shita kara Miru ka? Yoko kara Miru ka?",
-          "img": "https://media.kitsu.io/anime/poster_images/12794/medium.jpg?1498640912",
-          "syn": "Schoolchildren Norimichi, Yuusuke, and Junichi want to know if fireworks look round or flat from the side. They make a plan to find the answer at a fireworks display, while Nazuna schemes to run away with Norimichi or Yuusuke, whoever wins at the pool. \r\n\r\n(Source: Tokyo International Film Festival)",
-          "id": 0
-        }
-      ]
-    },
-    {
       "id": "13",
       "AnimeList": [
         {
@@ -312,23 +290,6 @@
       ]
     },
     {
-      "id": "5",
-      "AnimeList": [
-        {
-          "name": "Pokemon: Celebi Toki wo Koeta Deai",
-          "img": "https://media.kitsu.io/anime/poster_images/1003/medium.jpg?1408442826",
-          "syn": "40 years ago, a Celebi was being attacked by a Pokemon Hunter. Luckily, a young boy named Sammy saved Celebi. Using its Time Traveling power, Celebi transported himself and Sammy 40 years into the future. There, Ash, Misty, and Brock assist Sammy to the healing lake in the forest so they can heal the wounded Celebi. Unfortunately an evil Team Rocket member, Viscious a.k.a. \"The Iron Masked Marauder\", tries to capture Celebi using his technology. As Ash and Co. try to get away from Viscious, they also run into Jessie, James, and Meowth, who also want to capture Celebi. Soon it becomes a race against time to get Celebi and Sammy back to the forest before Celebi is caught and is used to destroy the forest and themselves. \r\n(Source: ANN)",
-          "id": 0
-        },
-        {
-          "name": "Carnival Phantasm: Illya-jou",
-          "img": "https://media.kitsu.io/anime/poster_images/6695/medium.jpg?1408459144",
-          "syn": "A special feature based on a real-time run of the Fate/Hollow Ataraxia Visual Novel's mini-game, Illya's Castle. \r\nThe key characters' voice actor/actress' participate in live commentary for the duration of the game.",
-          "id": 1
-        }
-      ]
-    },
-    {
       "id": "20",
       "AnimeList": [
         {
@@ -351,12 +312,79 @@
       ]
     },
     {
+      "id": "14",
+      "AnimeList": [
+        {
+          "name": "Star Fox Zero: The Battle Begins",
+          "img": "https://media.kitsu.io/anime/poster_images/12089/medium.jpg?1461276732",
+          "syn": "Andross, an ape exiled from the Lylad Planetary System by General Pepper seeks revenge by attacking the planet Corneria and its innocence, kidnapping Pepper in the process. Meanwhile, it's another usual day for Team Star Fox, a gang of space mercenaries: Lazing around, getting angry at video games, and being lectured by their mentors. But all of that changes once they receive a distress call from a familiar face. \r\nMeet Fox McCloud, son of the deceased James McCloud, as he and his top-notch crew—Slippy Toad, Falco Lombarde and Peppy Hare—fight back against Andross's robotic army in style, and attempt to save Corneria from the skies.",
+          "id": 0
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "AnimeList": [
+        {
+          "name": "Pokemon: Celebi Toki wo Koeta Deai",
+          "img": "https://media.kitsu.io/anime/poster_images/1003/medium.jpg?1408442826",
+          "syn": "40 years ago, a Celebi was being attacked by a Pokemon Hunter. Luckily, a young boy named Sammy saved Celebi. Using its Time Traveling power, Celebi transported himself and Sammy 40 years into the future. There, Ash, Misty, and Brock assist Sammy to the healing lake in the forest so they can heal the wounded Celebi. Unfortunately an evil Team Rocket member, Viscious a.k.a. \"The Iron Masked Marauder\", tries to capture Celebi using his technology. As Ash and Co. try to get away from Viscious, they also run into Jessie, James, and Meowth, who also want to capture Celebi. Soon it becomes a race against time to get Celebi and Sammy back to the forest before Celebi is caught and is used to destroy the forest and themselves. \r\n(Source: ANN)",
+          "id": 0
+        },
+        {
+          "name": "Carnival Phantasm: Illya-jou",
+          "img": "https://media.kitsu.io/anime/poster_images/6695/medium.jpg?1408459144",
+          "syn": "A special feature based on a real-time run of the Fate/Hollow Ataraxia Visual Novel's mini-game, Illya's Castle. \r\nThe key characters' voice actor/actress' participate in live commentary for the duration of the game.",
+          "id": 1
+        },
+        {
+          "name": "Byulbyul Iyagi 2",
+          "img": "https://media.kitsu.io/anime/poster_images/5739/medium.jpg?1486236441",
+          "syn": "This film consists of 6 animated shorts produced by the Human Rights Commission of Korea.  Like the previous movie, the stories deal with seeing the world through the eyes of people who are different from social norms.  The film was nominated for Best Animated Feature in 2008 from the Asia Pacific Screen Awards.\r\n1. \"The Third Wish” (AN Dong-hui, RYU Jeong-wu). A fairy godmother appears before a visually impaired young woman to grant her three wishes. But this is no fairytale. The irritable middle-aged fairy wants to finish her job as soon as possible. Yet she proves to be helpful as she leads the woman through a busy marketplace, which is delightfully reminiscent of \"Amelie\". But it's no walk in the park, as busy urbanites show no consideration for our protagonist. Yet she prevails through obstacles. With a walking stick, she taps together the heels of her shiny new shoes and follows the \"yellow brick road\" (guiding tiles for the visually impaired) around the city.\r\n2. \"Ajukari” (HONG Deok-pyo) is a street-style cartoon. It comically depicts how a certain macho \"complex\" can cripple men. Male circumcision becomes the ultimate standard for being \"manly\" and those who have failed to do the deed are forever fearful of going to public baths.\r\n3. \"Baby\" (LEE Hong-su, LEE Hong-min) portrays the difficulties a career woman faces in having a child. \"I'm not saying you can't have maternity leave, but can you afford to raise a child while working?\" asks her boss. This smart story portrays everything from mother and daughter-in-law relationships to a parody of \"Tazza: The High Rollers\" and hilarious episodes where an \"ambulance bus\" picks up several patients en route.\r\n4. \"Shine Shine Shining\" (KWON Mi-jeong) is drawn like a warm, watercolor storybook for children. Grade schooler Eun-jin is smart and popular, but she has a secret. She hides her curly hair, which she gets from her Filipino mother, in braids.\r\n5. \"Merry Golasmas\" is an adorable claymation, or stop motion animation of models constructed from clay, plasticine, etc. It explores physical discrimination or stereotypes. In an open audition to find a Santa Claus, the real Santas ― one who's black, another who's Asian, a female Santa and one in a wheelchair ― lose to a fake Santa, a pot-bellied, Caucasian.\r\n6. “Lies\" explores homosexuality. Drawn in pastel-like sketches with art deco-esque details, it is a stunning digital cut-out animation, A homosexual man is forced by his parents to marry a woman, while others are pressured to fake having a girlfriend or receive \"therapy\" to become straight.\r\n(Source: The Korean Times)",
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "AnimeList": [
+        {
+          "name": "Kimi no Na wa.",
+          "img": "https://media.kitsu.io/anime/poster_images/11614/medium.jpg?1496075336",
+          "syn": "From director Makoto Shinkai, the innovative mind behind Voices of a Distant Star and 5 Centimeters Per Second, comes a beautiful masterpiece about time, the thread of fate, and the hearts of two young souls.\r\n\r\nThe day the stars fell, two lives changed forever. High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other. Yet, somehow, it works. They build a connection and communicate by leaving notes, messages, and more importantly, an imprint.\r\n\r\nWhen a dazzling comet lights up the night’s sky, it dawns on them. They want something more from this connection—a chance to meet, an opportunity to truly know each other. Tugging at the string of fate, they try to find a way to each other. But distance isn’t the only thing keeping them apart. Is their bond strong enough to face the cruel irony of time? Or is their meeting nothing more than a wish upon the stars?\r\n\r\n(Source: FUNimation Films)",
+          "id": 0
+        }
+      ]
+    },
+    {
       "id": "22",
+      "AnimeList": [
+        {
+          "name": "Choujuu Kishin Dancougar",
+          "img": "https://media.kitsu.io/anime/poster_images/2043/medium.jpg?1408445602",
+          "syn": "Emperor Muge Zarbados and his Empire of Death decide that their next conquest will be the faraway planet of Earth. Muge becomes even more fearsome because of Shapiro Keats, a power-hungry Earthling-turned-traitor. It's up to Shinobu, Sara (Shapiro's old girldfriend), Masato, and Ryo of the Jyusenkitai/Cyber Beast Force to pilot the four Jyusenki/Beast Mecha (Eagle Fighter, Land Cougar, Land Liger, and Big Moth [a mammoth mecha]), which can combine into the giant mech Dancougar.\n(Source: ANN)",
+          "id": 0
+        }
+      ]
+    },
+    {
+      "id": "23",
       "AnimeList": [
         {
           "name": "One Hundred Thousand Bad Jokes (Movie)",
           "img": "https://media.kitsu.io/anime/poster_images/12144/medium.jpg?1462844159",
           "syn": "The film adaptation of the One Hundred Thousand Bad Jokes web manhua.",
+          "id": 0
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "AnimeList": [
+        {
+          "name": "Dragon Ball Super",
+          "img": "https://media.kitsu.io/anime/poster_images/10879/medium.jpg?1489942553",
+          "syn": "Set just after the events of the Buu Saga of Dragon Ball Z, a deadly threat awakens once more. People lived in peace without knowing who the true heroes were during the devastating battle against Majin Buu. The powerful Dragon Balls have prevented any permanent damage, and our heroes also continue to live a normal life. In the far reaches of the universe, however, a powerful being awakens early from his slumber, curious about a prophecy of his defeat.\r\nJoin Gokuu, Piccolo, Vegeta, Gohan, and the rest of the Dragon Ball crew as they tackle the strongest opponent they have ever faced. Beerus, the god of destruction, now sets his curious sights on Earth. Will the heroes save the day and prevent earth's destruction? Or will the whims of a bored god prove too powerful for the Saiyans? Gokuu faces impossible odds once more and fights for the safety of his loved ones and the planet.",
           "id": 0
         }
       ]

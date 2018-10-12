@@ -4,15 +4,15 @@ import Results from './Results';
 class Search extends Component {
 	constructor(){
 		super();
-	this.state = {
-		animeName:'',
-		animeStats: [],
-		picked: false
+		this.state = {
+			animeStats: [],
+			picked: false
+		}
 	}
-	}
+	
+	//users can search by anime name
 	getAnimeStats = (name) => {
 		let woSpace = name.replace(' ', '%20')
-		this.setState({animeName: woSpace})
 		const url = 'https://kitsu.io/api/edge/anime?filter[text]=' + woSpace;
 		fetch(url, {cache: "force-cache"})
 		.then(res => res.json())
@@ -36,10 +36,11 @@ render(){
 		<div className='search'>
 		<h1 className='m-3'>Search Anime By Name</h1>
 			<form onSubmit={this.onSubmit} className='extraSpace'>
-				<input type="search"
-				name="search"
-				ref={(input) => this.query = input}
-				placeholder="Name Your Anime"
+				<input 
+					type="search"
+					name="search"
+					ref={(input) => this.query = input}
+					placeholder="Name Your Anime"
 				/>
 				<button type="submit" id="submit">Submit</button>
 			</form>

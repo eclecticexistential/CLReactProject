@@ -4,16 +4,18 @@ import {Link} from 'react-router-dom';
 class Details extends Component {
 	constructor(){
 		super();
-	this.state = {
-		animeStat: []
-	}
+		this.state = {
+			animeStat: []
+		}
 	}
 	
+	//add anime to app state
 	addAnime = () => {
 		this.props.addAnime(this.state.animeStat[0]);
 		alert("Added.")
 	};
 	
+	//gets anime details from db when component mounts
 	async componentDidMount() {
 		let urlLoc = window.location.href
 		let nameOnly = urlLoc.split('/').pop();

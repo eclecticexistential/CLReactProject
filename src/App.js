@@ -19,6 +19,7 @@ class App extends Component {
 		}
 	}
 	
+	// when user logs in their anime list is retrieved from the db via json-server
 	getAnimeList = (id) => {
 		let url = `http://localhost:3004/user/${id}`
 		fetch(url)
@@ -41,6 +42,7 @@ class App extends Component {
 		this.setState({userId: userId})
 	}
 	
+	//when new or regular user adds or removes anime from their list content ids are restructured and posted to db 
 	postAnimeList = (userId) => {
 		let updatedAnimeId = this.state.ListOfAnime.map((anime, index) => {
 			anime.id = index
@@ -65,6 +67,7 @@ class App extends Component {
 			});
 	}
 	
+	// when user adds or removes an anime from their list, the content in the db is deleted prior to the POST
 	updateAnimeList = (userId) => {
 		let url = `http://localhost:3004/user/${userId}`
 			fetch(url, {
@@ -80,6 +83,9 @@ class App extends Component {
 			return this.postAnimeList(userId)
 	}
 	
+	//when user clicks save, userId is stored in state and db is searched first by userId. 
+	//If userId found, their animelist is updated via delete then post of anime list/id stored in state.
+	//If no userId matches due to user being new, post function is called instead to create a new user: id, animelist
 	saveAnimeList = (userId) => {
 		this.setState({userId: userId})
 		let url = `http://localhost:3004/user`
@@ -89,6 +95,7 @@ class App extends Component {
 			if(users.id === userId){
 				return this.updateAnimeList(userId)
 				}
+			return false
 			})
 		})
 		.catch(error => {
@@ -97,6 +104,7 @@ class App extends Component {
 		this.postAnimeList(userId)
 	}
 	
+	//user adds anime to app state
 	addAnime = (anime) => {
 		let newAnime = {name: anime.canonicalTitle, img: anime.posterImage.medium, syn: anime.synopsis, id: (this.state.ListOfAnime.length)}
 		this.setState(state =>{
@@ -105,6 +113,7 @@ class App extends Component {
 		})
 	};
 	
+	// user removes anime from app state
 	removeAnime = (animeId) => {
 		let getDigit = parseInt(animeId, 10)
 		let filteredAnime = this.state.ListOfAnime.filter(item => item.id !== getDigit)
@@ -118,21 +127,29 @@ class App extends Component {
 	<BrowserRouter>
 		  <div className="App">
 				<Header 
-				currUser={this.state.userId} 
-				log={this.userLogOut} 
-				login={this.userLogIn}
-				getList={this.getAnimeList}/>	
+					currUser={this.state.userId} 
+					log={this.userLogOut} 
+					login={this.userLogIn}
+					getList={this.getAnimeList}
+				/>	
 				<Switch>
 					<Route path="/Genre" component={Genre}/>
-					<Route path="/View" render={ () => 
-						<View anime={this.state.ListOfAnime} 
-							  remov={this.removeAnime} 
-							  saveList={this.saveAnimeList} 
-							  currUser={this.state.userId}
-						/> } />
+					<Route path="/View" 
+						render={ () => 
+								<View anime={this.state.ListOfAnime} 
+									  remov={this.removeAnime} 
+									  saveList={this.saveAnimeList} 
+									  currUser={this.state.userId}
+								/> 
+							} 
+					/>
 					<Route path="/Search" component={Search}/>
 					<Route exact path="/" component={About}/>
-					<Route path="/Details" render={ () => <Details addAnime={this.addAnime} /> }/>
+					<Route path="/Details" 
+						render={ () => 
+							<Details addAnime={this.addAnime} /> 
+							}
+					/>
 					<Route component={NotFound}/>
 				</Switch>
 				<Footer />

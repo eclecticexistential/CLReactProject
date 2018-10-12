@@ -7,18 +7,18 @@ const Results = props => {
 	return (
 	<div>
 		{filteredAnime.length > 0 ?
-		<div className='App row'>
-		{filteredAnime.map((animes, key) => 
-			<Anime 
-				key={key} 
-				title={animes.canonicalTitle} 
-				img={animes.posterImage ? animes.posterImage.medium : ''} synopsis={animes.synopsis}
-			/>
-		)}
-		</div>
+			<div className='App row'>
+				{filteredAnime.map((animes, key) => 
+					<Anime 
+						key={key} 
+						title={animes.canonicalTitle} 
+						img={animes.posterImage && animes.posterImage.medium} synopsis={animes.synopsis}
+					/>
+				)}
+			</div>
 			:
-			<h5>Try another genre.</h5>
-			}
+			<h5>Loading...</h5>
+		}
 	</div>
 	)
 }

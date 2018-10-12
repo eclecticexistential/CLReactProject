@@ -10,15 +10,18 @@ class Header extends Component {
 		}
 	}
 	
+	//updates userId state to user id entered by user
 	onUpdate = (e) => {
 		this.setState({userId: e.target.value})
 	}
 	
+	//returns userId stored in app to blank
 	userLogOut = () => {
 		this.props.log()
 		this.setState({userId: ''})
 	}
 	
+	//confirms userId is legit prior to logging in and getting user id to avoid app breaking errors
 	userLogIn = () => {
 		let url = `http://localhost:3004/user`
 		fetch(url)
@@ -28,6 +31,7 @@ class Header extends Component {
 				return (this.props.login(this.state.userId),
 						this.props.getList(this.state.userId)
 				)}
+			return false
 			})
 		})
 	}
